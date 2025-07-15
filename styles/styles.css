@@ -5,6 +5,9 @@ main {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid rgb(15, 94, 81);
+    padding: 200px;
+    box-shadow: 0 0 30px steelblue; 
     ...
 }
 
@@ -12,7 +15,7 @@ p {
   padding:0;  
 }
 
-aside {
+aside> {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2); /* 1 */
@@ -28,7 +31,7 @@ aside img {
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
 }
