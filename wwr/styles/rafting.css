@@ -52,28 +52,29 @@ nav a:hover {
 header,
 main,
 footer {
-    .socialmedia {
-            text-align: center;
-            /* center the icons */
-            margin-top: 20px;
-        }
-    
-        .socialmedia a {
-            /* keep icons side by side */
-            margin: 0 10px;
-            /* space between icons */
-            text-decoration: none;
-            /* remove underline from links */
-        }
-    
-        .socialmedia img {
-            width: 40px;
-            /* consistent size */
-            height: auto;
-            /* keeps aspect ratio */
-        }
     width: 840px;
     margin: 0 auto;
+}
+
+.socialmedia {
+    text-align: center;
+    /* center the icons */
+    margin-top: 20px;
+}
+
+.socialmedia a {
+    /* keep icons side by side */
+    margin: 0 10px;
+    /* space between icons */
+    text-decoration: none;
+    /* remove underline from links */
+}
+
+.socialmedia img {
+    width: 40px;
+    /* consistent size */
+    height: auto;
+    /* keeps aspect ratio */
 }
 
 /* ✅ Headings */
