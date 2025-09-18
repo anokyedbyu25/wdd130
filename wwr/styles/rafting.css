@@ -1,3 +1,13 @@
+/* ✅ Define CSS variables in :root */
+:root {
+    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: Georgia, 'Times New Roman', serif;
+    --primary-color: #004466;
+    /* Dark blue for headings */
+    --accent1-color: #ffcc00;
+    /* Golden accent color */
+}
+
 /* ✅ Reset Box Model */
 * {
     margin: 0;
