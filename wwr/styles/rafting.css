@@ -24,9 +24,54 @@ body {
 }
 
 /* ✅ Limit page width and center */
+nav {
+    padding: 10px;
+    width: 200px;
+    /* optional fixed width */
+}
+
+nav a {
+    display: block;
+    /* makes each link take the full line */
+    padding: 10px;
+    margin-bottom: 5px;
+    /* space between links */
+    text-decoration: none;
+    /* remove underline */
+    color: rgb(31, 7, 7);
+    /* text color */
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    background-color: #555;
+    /* highlight effect on hover */
+    color: rgb(6, 170, 0);
+}
 header,
 main,
 footer {
+    .socialmedia {
+            text-align: center;
+            /* center the icons */
+            margin-top: 20px;
+        }
+    
+        .socialmedia a {
+            /* keep icons side by side */
+            margin: 0 10px;
+            /* space between icons */
+            text-decoration: none;
+            /* remove underline from links */
+        }
+    
+        .socialmedia img {
+            width: 40px;
+            /* consistent size */
+            height: auto;
+            /* keeps aspect ratio */
+        }
     width: 840px;
     margin: 0 auto;
 }
