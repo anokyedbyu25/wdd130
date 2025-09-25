@@ -99,7 +99,7 @@ article, section {
   width: 90%;
   max-width: 1100px;
   margin: 2rem auto;
-  background-color: #0c22e8;
+  background-color: #fff;
   padding: 1.5rem;
   border-radius: 8px;
 }
@@ -141,7 +141,7 @@ h2 {
 }
 
 .adventure-grid figure {
-  background: #19fc007f;
+  background: #fff;
   border-radius: 6px;
   overflow: hidden;
   padding: 0.5rem;
@@ -169,7 +169,7 @@ footer {
   max-width: 1100px;
   margin: 2rem auto 0;
   padding: 1.5rem;
-  background-color: #1ed40de5;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
