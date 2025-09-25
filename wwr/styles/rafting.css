@@ -3,7 +3,7 @@
    =============================== */
 :root {
   --primary-color: #0077b6;       /* deep river blue */
-  --accent1-color: #ff9800;       /* bright adventure orange */
+  --accent1-color: #0818f0c7;       /* bright adventure orange */
   --body-font: "Segoe UI", Arial, sans-serif;
   --heading-font: "Trebuchet MS", Verdana, sans-serif;
   --bg-light: #f5f5f5;
@@ -99,7 +99,7 @@ article, section {
   width: 90%;
   max-width: 1100px;
   margin: 2rem auto;
-  background-color: #fff;
+  background-color: #0c22e8;
   padding: 1.5rem;
   border-radius: 8px;
 }
@@ -141,7 +141,7 @@ h2 {
 }
 
 .adventure-grid figure {
-  background: #fff;
+  background: #19fc007f;
   border-radius: 6px;
   overflow: hidden;
   padding: 0.5rem;
@@ -169,7 +169,7 @@ footer {
   max-width: 1100px;
   margin: 2rem auto 0;
   padding: 1.5rem;
-  background-color: #fff;
+  background-color: #1ed40de5;
   display: flex;
   justify-content: space-between;
   align-items: center;
