@@ -1,147 +1,158 @@
-/* ✅ Define CSS variables in :root */
-:root {
-    --body-font: Arial, Helvetica, sans-serif;
-    --heading-font: Georgia, 'Times New Roman', serif;
-    --primary-color: #004466;
-    /* Dark blue for headings */
-    --accent1-color: #1d1804;
-    /* Golden accent color */
-}
-
-/* ✅ Reset Box Model */
+/* ----------------- RESET ----------------- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ✅ Body Styles */
+/* ----------------- ROOT VARIABLES ----------------- */
+:root {
+  --body-font: Arial, Helvetica, sans-serif;
+  --heading-font: 'Trebuchet MS', sans-serif;
+  --primary-color: #005f73;
+  --accent1-color: #0a9396;
+  --background-color: #e9f1f3;
+}
+
+/* ----------------- BODY ----------------- */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: #f9f9f9;
-    line-height: 1.6;
+  font-family: var(--body-font);
+  color: #333;
+  background-color: var(--background-color);
+  line-height: 1.6;
 }
 
-/* ✅ Limit page width and center */
-nav {
-    padding: 10px;
-    width: 200px;
-    /* optional fixed width */
+/* ----------------- HEADER ----------------- */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;   /* logo | nav */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
 }
 
-nav a {
-    display: block;
-    /* makes each link take the full line */
-    padding: 10px;
-    margin-bottom: 5px;
-    /* space between links */
-    text-decoration: none;
-    /* remove underline */
-    color: rgb(31, 7, 7);
-    /* text color */
-    font-weight: bold;
-
+header .logo {
+  width: 120px;
+  height: auto;
 }
 
-nav a:hover {
-    background-color: #555;
-    /* highlight effect on hover */
-    color: rgb(6, 170, 0);
-}
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
+/* NAV inside header uses Flex */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
 }
 
-.socialmedia {
-    text-align: center;
-    /* center the icons */
-    margin-top: 20px;
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.socialmedia a {
-    /* keep icons side by side */
-    margin: 0 10px;
-    /* space between icons */
-    text-decoration: none;
-    /* remove underline from links */
+header nav a:hover {
+  color: var(--accent1-color);
 }
 
-.socialmedia img {
-    width: 40px;
-    /* consistent size */
-    height: auto;
-    /* keeps aspect ratio */
-}
-
-/* ✅ Headings */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* ✅ Consistent margin + padding */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* ✅ Remove underline from social media links */
-.socialmedia a {
-    text-decoration: none;
-}
-
-/* ✅ Hero Section */
+/* ----------------- HERO ----------------- */
 .hero {
-    position: relative;
-    /* children can be absolutely positioned */
+  position: relative;
+  text-align: center;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    /* keep aspect ratio */
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* ✅ Hero Heading Overlay */
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-    /* ensure good contrast */
-    font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 1rem 2rem;
+  font-family: var(--heading-font);
+  font-size: 2rem;
 }
 
-/* ✅ Hero Article Overlay */
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.85);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+/* ----------------- HISTORY ----------------- */
+.history {
+  width: 90%;
+  max-width: 840px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-left: 6px solid var(--accent1-color);
+  border-radius: 6px;
 }
 
-/* ✅ Hero Article Image */
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 12px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+.history h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* ----------------- ADVENTURES ----------------- */
+.adventures {
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+.adventures h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.adventures figure {
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.adventures figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--accent1-color);
+}
+
+/* ----------------- FOOTER ----------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer .socialmedia {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .socialmedia a {
+  text-decoration: none;
+}
+
+footer .socialmedia img {
+  width: 30px;
+  height: auto;
 }
