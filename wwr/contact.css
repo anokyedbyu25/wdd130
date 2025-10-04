@@ -64,3 +64,44 @@ header .logo {
 .contact-form button:hover {
     background-color: #5149cc;
 }
+
+.employees {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.employees h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: center;
+    /* centers horizontally */
+    gap: 2rem;
+    /* space between items */
+    flex-wrap: wrap;
+    /* makes it responsive */
+}
+
+.employee-profiles figure {
+    text-align: center;
+    max-width: 200px;
+}
+
+.employee-profiles img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* circle image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.employee-profiles figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
