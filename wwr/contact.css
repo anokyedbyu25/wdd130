@@ -1,0 +1,66 @@
+/* General Layout */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c63ff;
+    padding: 1rem;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header .logo {
+    height: 50px;
+}
+
+/* Company Info */
+.company-info {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem;
+}
+
+.contact-section .map iframe {
+    width: 300px;
+    height: 300px;
+    border: none;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 350px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #5149cc;
+}
