@@ -59,11 +59,9 @@ nav a:hover {
 }
 
 .map iframe {
-    max-width: 100%;
     border: 0;
-    border-radius: 8px;
+    max-width: 100%;
 }
-
 /* Contact Form */
 .contact-form {
     flex: 1 1 300px;
