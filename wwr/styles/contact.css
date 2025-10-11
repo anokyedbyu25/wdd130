@@ -21,7 +21,7 @@ body {
    HEADER & NAVIGATION
    ================================================ */
 header {
-    background-color: #c7b7f7;
+    background-color: #028a68;
     /* light purple from wireframe */
     padding: 1rem 2rem;
     display: flex;
@@ -45,12 +45,25 @@ nav a {
     color: #000;
     font-weight: 600;
     padding: 0.5rem 1rem;
-    background-color: #fff;
+    background-color: #028a68;
     border: 1px solid #999;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffdd00;
+    /* yellow accent for hover/active */
+}
 nav a:hover {
     background-color: #eee;
 }
@@ -166,8 +179,8 @@ button[type="submit"]:hover {
 }
 
 .employee {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
     border-radius: 6px;
     padding: 1rem;
     width: 200px;

@@ -1,220 +1,214 @@
-/* ===============================
-   Global Variables
-   =============================== */
-:root {
-  --primary-color: #0077b6;
-  /* deep river blue */
-  --accent1-color: #521eb3;
-  /* bright adventure orange */
-  --body-font: "Segoe UI", Arial, sans-serif;
-  --heading-font: "Trebuchet MS", Verdana, sans-serif;
-  --bg-light: #f5f5f5;
-}
-
-/* ===============================
-   Global Reset & Body
-   =============================== */
+/* ===== Global Reset ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html,
 body {
-  font-family: var(--body-font);
-  color: #333;
-  background-color: var(--bg-light);
-  line-height: 1.6;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
 }
 
-/* ===============================
-   Header (Grid Layout)
-   =============================== */
+/* ===== Header ===== */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #028a68;
-  /* deep blue river tone */
+  background-color: #023e8a;
   padding: 1rem 2rem;
+  color: white;
+  width: 100%;
 }
 
-header img {
-  width: 160px;
-  height: auto;
+.logo {
+  height: 60px;
 }
 
-/* Navigation inside Header (Flexbox) */
-header nav {
+nav {
   display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
-header nav a {
+nav a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: white;
   font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background 0.3s;
+  transition: color 0.3s;
 }
 
-header nav a:hover {
-  background-color: var(--accent1-color);
-  color: #fff;
+nav a:hover,
+nav a.active {
+  color: #ffd60a;
 }
 
-/* ===============================
-   Hero Section
-   =============================== */
+/* ===== Hero Section ===== */
 .hero {
   position: relative;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  /* fills most of the screen */
+  width: 100%;
+  overflow: hidden;
 }
 
-.hero img {
-  display: block;
+.hero-img {
+  position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  z-index: 0;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  max-width: 700px;
+  padding: 2rem;
 }
 
 .hero h1 {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 16px 20px;
-  font-family: var(--heading-font);
-  font-size: 2rem;
-  border-radius: 6px;
-}
-
-/* ===============================
-   Article & Sections
-   =============================== */
-article,
-section {
-  width: 90%;
-  max-width: 1100px;
-  margin: 2rem auto;
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-}
-
-article img {
-  float: right;
-  width: 200px;
-  margin: 0 0 1rem 1rem;
-  border-radius: 6px;
-}
-
-/* Headings inside main content */
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
-/* ===============================
-   History Section
-   =============================== */
-.history {
-  text-align: center;
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
-/* ===============================
-   Adventures Section
-   =============================== */
-.adventures {
-  text-align: center;
-}
-
-.adventure-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.adventure-grid figure {
-  background: #fff;
-  border-radius: 6px;
-  overflow: hidden;
-  padding: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.adventure-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-.adventure-grid figcaption {
-  margin-top: 0.5rem;
+.btn {
+  background-color: #ffb703;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
   font-weight: bold;
-  color: var(--accent1-color);
-  font-size: 0.9rem;
+  transition: background 0.3s;
 }
 
-/* ===============================
-   Footer
-   =============================== */
+.btn:hover {
+  background-color: #ffd60a;
+}
+
+/* ===== Purpose Section ===== */
+.purpose {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.purpose h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #023e8a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid article {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.grid h3 {
+  color: #03045e;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Newsletter Section ===== */
+.newsletter {
+  text-align: center;
+  background-color: #caf0f8;
+  padding: 3rem 1rem;
+}
+
+.newsletter h2 {
+  color: #03045e;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+form input {
+  padding: 0.6rem;
+  width: 250px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #023e8a;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #0077b6;
+}
+
+/* ===== Footer ===== */
 footer {
   background-color: #023e8a;
   color: white;
   text-align: center;
   padding: 1.5rem 1rem;
+  width: 100%;
+  margin-top: auto;
 }
 
-footer p {
-  margin-bottom: 0.5rem;
-}
-
-footer .socialmedia {
+.social {
+  margin-top: 0.8rem;
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  gap: 1rem;
 }
 
-footer .socialmedia a {
-  text-decoration: none;
+.social img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s;
 }
 
-footer .socialmedia img {
-  background-color: #023e8a;
-    color: white;
-    text-align: right;
-    padding: 1.5rem 1rem;
-}
-
-footer .socialmedia img:hover {
+.social img:hover {
   transform: scale(1.1);
-}
-
-/* ===============================
-   Responsive Adjustments
-   =============================== */
-@media (max-width: 700px) {
-  header {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  header nav {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  article img {
-    float: none;
-    display: block;
-    margin: 1rem auto;
-  }
 }
