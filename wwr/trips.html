@@ -4,70 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrilling Rafting Adventures | Rapids & Wilderness Trips</title>
     <meta name="description"
-        content="Explore our thrilling white water rafting trips for all adventure levels. Book your next outdoor experience today!">
-    <title>Trips | White Water Rafting Adventures</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+        content="Discover our exciting white water rafting trips — from serene scenic floats to heart-pounding rapid adventures. Book your next outdoor experience today!">
+    <link rel="stylesheet" href="styles/trips.css">
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html" class="active">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
+<header>
+    <img src="images/logo.png" alt="Dennis White Water Rafting Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="trips.html" class="active">Trips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <section class="hero-trips">
-            <h1>Find Your Next Adventure</h1>
-            <p>From calm family floats to thrilling Class V rapids, we have something for everyone!</p>
+    <main class="trips-page">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Unleash Your Inner Rafting Skills</h1>
+            <p>From calm scenic floats to adrenaline-pumping Class V rapids, we’ve got the perfect rafting trip for
+                everyone!</p>
+            <a href="contact.html" class="btn">Book Your Trip Now</a>
         </section>
 
-        <section class="trip-grid">
-            <article class="trip-card">
-                <img src="images/river1.jpg" alt="Family Float Trip">
-                <h2>Family Float Adventure</h2>
-                <p>Perfect for families and beginners! Enjoy calm waters and scenic views as you float down the river
-                    with our expert guides.</p>
-                <p><strong>Duration:</strong> 2 hours</p>
-                <p><strong>Price:</strong> $60 per person</p>
-            </article>
+        <!-- Trip Descriptions -->
+        <section class="trip-descriptions">
+            <h2>Our Featured Trips</h2>
+            <div class="trip-grid">
+                <article class="trip">
+                    <img src="images/family-float.jpg" alt="Family rafting on calm river">
+                    <h3>Family Fun Float</h3>
+                    <p>Perfect for beginners and families, this gentle float lets you enjoy breathtaking scenery and
+                        calm waters while learning the basics of rafting. Great for kids and first-timers!</p>
+                </article>
 
-            <article class="trip-card">
-                <img src="images/river2.jpg" alt="Intermediate Rapids">
-                <h2>Whitewater Classic</h2>
-                <p>Experience excitement and teamwork through moderate rapids! A great mix of adventure and fun for all
-                    skill levels.</p>
-                <p><strong>Duration:</strong> Half day</p>
-                <p><strong>Price:</strong> $120 per person</p>
-            </article>
+                <article class="trip">
+                    <img src="images/adventure-rapid.jpg" alt="Group paddling through rapids">
+                    <h3>Adventure Rapids</h3>
+                    <p>Get your heart racing with our most popular trip! Navigate thrilling Class III–IV rapids with our
+                        expert guides leading the way. This one’s for the Adventure Seekers!</p>
+                </article>
 
-            <article class="trip-card">
-                <img src="images/river3.jpg" alt="Extreme Rapids Adventure">
-                <h2>Extreme Rapids Challenge</h2>
-                <p>Ready for the ultimate thrill? Take on Class IV and V rapids with our most experienced guides. Not
-                    for the faint-hearted!</p>
-                <p><strong>Duration:</strong> Full day</p>
-                <p><strong>Price:</strong> $220 per person</p>
-            </article>
+                <article class="trip">
+                    <img src="images/wilderness-expedition.jpg" alt="Rafting through wilderness">
+                    <h3>Wilderness Expedition</h3>
+                    <p>Experience a multi-day wilderness journey deep into untouched terrain. Camp under the stars,
+                        enjoy freshly cooked meals, and conquer mighty rapids by day.</p>
+                </article>
+            </div>
         </section>
 
-        <section class="cta-section">
-            <h2>Book Your Adventure Today!</h2>
-            <p>Spaces fill up fast. Don’t miss your chance to experience the rush of the river.</p>
-            <a href="contact.html" class="cta-button">Contact Us to Reserve</a>
+        <!-- Trip Table -->
+        <section class="trip-table">
+            <h2>Trip Details & Pricing</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                        <th>Available Dates</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Family Fun Float</td>
+                        <td>Half Day</td>
+                        <td>Easy</td>
+                        <td>$75 / person</td>
+                        <td>May – September</td>
+                    </tr>
+                    <tr>
+                        <td>Adventure Rapids</td>
+                        <td>Full Day</td>
+                        <td>Moderate</td>
+                        <td>$120 / person</td>
+                        <td>April – October</td>
+                    </tr>
+                    <tr>
+                        <td>Wilderness Expedition</td>
+                        <td>3 Days</td>
+                        <td>Challenging</td>
+                        <td>$350 / person</td>
+                        <td>June – August</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Lets Dive Into the Rapids – Start Your Journey!</h2>
+            <p>Don’t wait — spots fill up fast during peak season! Reach out today to plan your perfect adventure.</p>
+            <a href="contact.html" class="btn">Contact Us</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 White Water Rafting Adventures | Designed by [Your Name]</p>
-        <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
-        <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
-        <a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        <p>&copy; 2025 White Water Rafting Adventures | Designed by Your Name</p>
+        <div class="social-links">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        </div>
     </footer>
 </body>
 
