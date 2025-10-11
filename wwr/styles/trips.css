@@ -64,7 +64,7 @@ nav ul li a.active {
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: #11021b;
+    color: oklab(24.576% 0.00845 -0.15028);
     padding: 6rem 2rem;
 }
 
