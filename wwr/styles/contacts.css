@@ -16,6 +16,7 @@ body {
     color: #222;
     background-color: #fff;
 }
+
 /* ===== Header ===== */
 header {
     display: flex;
@@ -47,6 +48,7 @@ nav a:hover,
 nav a.active {
     color: #ffd60a;
 }
+
 /* ================================================
    PAGE HEADING & COMPANY INFO
    ================================================ */
